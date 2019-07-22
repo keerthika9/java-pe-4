@@ -28,4 +28,19 @@ public class TransposeTest {
         //Assert
         assertArrayEquals(expectedValue, actualValue);
     }
+
+    @Test
+    public void transposeNull() {
+
+        String[] actual = transpose.transposeString(null);
+        assertNull(actual);
+    }
+
+    @Test
+    public void transposeNotNull() {
+
+        String[] actual = transpose.transposeString("a quick brown fox jumps over the lazy dog");
+        assertNotNull(actual);
+
+    }
 }

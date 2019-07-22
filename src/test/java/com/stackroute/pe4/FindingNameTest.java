@@ -30,4 +30,12 @@ public class FindingNameTest {
 
     }
 
+    @Test
+    public void givenStringAsInputShouldFindNotNull() {
+
+        boolean actual = findingName.isHarryHere("This is harry.");
+        assertNotNull(actual);
+
+    }
+
 }
