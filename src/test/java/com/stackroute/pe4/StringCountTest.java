@@ -17,12 +17,12 @@ public class StringCountTest {
         stringCount=null;
     }
    @Test
-    public void givenStringShouldReturnTheCharacterCount(){
+    public void givenStringAsInputShouldReturnTheCharacterCount(){
         int actualResult=stringCount.chardata(2);
         assertEquals(2,actualResult);
     }
     @Test
-    public void givenStringShouldReturncharacterCountNotNull() {
+    public void givenStringAsInputShouldReturncharacterCountNotNull() {
         int actual = stringCount.chardata(4);
         assertNotNull(actual);
 

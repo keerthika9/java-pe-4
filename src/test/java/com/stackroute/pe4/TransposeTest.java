@@ -20,7 +20,7 @@ public class TransposeTest {
   }
 
   @Test
-  public void test4() throws Exception {
+  public void givenStringAsInputShouldReturnTransposedvalue() {
     //Arrange
     String[] expectedValue = {"cat,dog"};
     //Act

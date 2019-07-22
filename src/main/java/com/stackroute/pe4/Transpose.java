@@ -5,6 +5,7 @@ public class Transpose {
     String[] string = str.split("\\s");
     for (int i = 0; i < string.length; i++) {
       String reverse = "";
+    //Reversing the given string using for loop
       for (int j = string[i].length() - 1; j >= 0; j--) {
         reverse = reverse + string[i].charAt(j);
       }

@@ -5,6 +5,7 @@ public class ReplaceCharacters {
     if(input==null){
       return null;
     }
+    //Replacing the characters in given string with specified characters
     String result=input.replaceAll("d","f");
     return result.replaceAll("l","t");
   }

@@ -19,7 +19,7 @@ public class ReplaceCharactersTest {
   }
 
   @Test
-  public void givenStringAsInputShouldreplaceCharacters() {
+  public void givenStringAsInputShouldReplaceCharacters() {
     String expected="faity fry";
     String actual=replaceCharacters.replace("daily dry");
     assertEquals(expected,actual);
@@ -27,7 +27,7 @@ public class ReplaceCharactersTest {
   }
 
   @Test
-  public void givenStringAsInputShouldreplaceCharactersNotNull() {
+  public void givenStringAsInputShouldReturnNotNull() {
     String actual=replaceCharacters.replace("daily dry");
     assertNotNull(actual);
 

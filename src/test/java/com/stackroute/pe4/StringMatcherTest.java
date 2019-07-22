@@ -26,7 +26,7 @@ StringMatcher stringMatcher;
         assertEquals(expected,actual);
     }
     @Test
-    public void givenStringAsInputShouldReturnmatchingNotNull() {
+    public void givenStringAsInputShouldReturnNotNull() {
 
         String actual=stringMatcher.matching("She sells seashells by the seashore","se");
         assertNotNull(actual);

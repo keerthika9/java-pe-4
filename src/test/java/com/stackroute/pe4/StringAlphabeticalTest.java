@@ -24,7 +24,7 @@ public class StringAlphabeticalTest {
     assertArrayEquals(expected,actual);
   }
   @Test
-  public void givenParagraphAsInputShouldReturnsortedWordsInParagraphNull() {
+  public void givenParagraphAsInputShouldReturnParagraphNull() {
 
     String []actual=stringAlphabetical.sortWords(null);
     assertNull(actual);
