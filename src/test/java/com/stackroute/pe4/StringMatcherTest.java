@@ -7,28 +7,31 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class StringMatcherTest {
-StringMatcher stringMatcher;
+    StringMatcher stringMatcher;
+
     @Before
     public void setUp() throws Exception {
-        stringMatcher=new StringMatcher();
+        stringMatcher = new StringMatcher();
     }
 
     @After
     public void tearDown() throws Exception {
-        stringMatcher=null;
+        stringMatcher = null;
     }
+
     @Test
-    public void  givenStringAsInputShouldReturnmatching() {
-        String expected="Found at: 4 - 6\n" +
+    public void givenStringAsInputShouldReturnmatching() {
+        String expected = "Found at: 4 - 6\n" +
                 "Found at: 10 - 12\n" +
                 "Found at: 27 - 29";
-        String actual=stringMatcher.matching("She sells seashells by the seashore","se");
-        assertEquals(expected,actual);
+        String actual = stringMatcher.matching("She sells seashells by the seashore", "se");
+        assertEquals(expected, actual);
     }
+
     @Test
     public void givenStringAsInputShouldReturnNotNull() {
 
-        String actual=stringMatcher.matching("She sells seashells by the seashore","se");
+        String actual = stringMatcher.matching("She sells seashells by the seashore", "se");
         assertNotNull(actual);
     }
 }

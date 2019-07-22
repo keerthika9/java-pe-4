@@ -9,18 +9,20 @@ public class StringCountTest {
 
     @org.junit.Before
     public void setUp() throws Exception {
-        this.stringCount=new StringCount();
+        this.stringCount = new StringCount();
     }
 
     @org.junit.After
     public void tearDown() throws Exception {
-        stringCount=null;
+        stringCount = null;
     }
-   @Test
-    public void givenStringAsInputShouldReturnTheCharacterCount(){
-        int actualResult=stringCount.chardata(2);
-        assertEquals(2,actualResult);
+
+    @Test
+    public void givenStringAsInputShouldReturnTheCharacterCount() {
+        int actualResult = stringCount.chardata(2);
+        assertEquals(2, actualResult);
     }
+
     @Test
     public void givenStringAsInputShouldReturncharacterCountNotNull() {
         int actual = stringCount.chardata(4);
@@ -28,4 +30,4 @@ public class StringCountTest {
 
     }
 
-    }
+}

@@ -7,25 +7,25 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TransposeTest {
-  Transpose transpose;
+    Transpose transpose;
 
-  @Before
-  public void setUp() throws Exception {
-    transpose = new Transpose();
-  }
+    @Before
+    public void setUp() throws Exception {
+        transpose = new Transpose();
+    }
 
-  @After
-  public void tearDown() throws Exception {
-    transpose = null;
-  }
+    @After
+    public void tearDown() throws Exception {
+        transpose = null;
+    }
 
-  @Test
-  public void givenStringAsInputShouldReturnTransposedvalue() {
-    //Arrange
-    String[] expectedValue = {"cat,dog"};
-    //Act
-    String[] actualValue = transpose.transposeString("god,tac");
-    //Assert
-    assertArrayEquals(expectedValue,actualValue);
-  }
+    @Test
+    public void givenStringAsInputShouldReturnTransposedvalue() {
+        //Arrange
+        String[] expectedValue = {"cat,dog"};
+        //Act
+        String[] actualValue = transpose.transposeString("god,tac");
+        //Assert
+        assertArrayEquals(expectedValue, actualValue);
+    }
 }

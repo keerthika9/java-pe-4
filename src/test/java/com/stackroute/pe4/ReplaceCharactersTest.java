@@ -7,30 +7,31 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ReplaceCharactersTest {
-  ReplaceCharacters replaceCharacters;
-  @Before
-  public void setUp() throws Exception {
-    replaceCharacters=new ReplaceCharacters();
-  }
+    ReplaceCharacters replaceCharacters;
 
-  @After
-  public void tearDown() throws Exception {
-    replaceCharacters=null;
-  }
+    @Before
+    public void setUp() throws Exception {
+        replaceCharacters = new ReplaceCharacters();
+    }
 
-  @Test
-  public void givenStringAsInputShouldReplaceCharacters() {
-    String expected="faity fry";
-    String actual=replaceCharacters.replace("daily dry");
-    assertEquals(expected,actual);
+    @After
+    public void tearDown() throws Exception {
+        replaceCharacters = null;
+    }
 
-  }
+    @Test
+    public void givenStringAsInputShouldReplaceCharacters() {
+        String expected = "faity fry";
+        String actual = replaceCharacters.replace("daily dry");
+        assertEquals(expected, actual);
 
-  @Test
-  public void givenStringAsInputShouldReturnNotNull() {
-    String actual=replaceCharacters.replace("daily dry");
-    assertNotNull(actual);
+    }
 
-  }
+    @Test
+    public void givenStringAsInputShouldReturnNotNull() {
+        String actual = replaceCharacters.replace("daily dry");
+        assertNotNull(actual);
+
+    }
 
 }
